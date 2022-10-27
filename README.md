@@ -17,7 +17,7 @@ Código para a instalação:
 
 ## Instalando o node na versão 14.20.1:
 
-- nvm install 14
+*nvm install 14
 
 ## Instalando o AngularCli:
 
