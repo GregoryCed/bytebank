@@ -1,6 +1,6 @@
 # Bytebank
 
-DependenCias:
+Dependências:
 
 Node - Versão 14.20.1
 AngularCli - Versão 10.1.6
