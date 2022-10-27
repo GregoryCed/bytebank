@@ -14,7 +14,7 @@ Código para a instalação:
 
 `export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"`
 
-`[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm`
+`[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"`
 
 ## Instalando o node na versão 14.20.1:
 
@@ -23,6 +23,10 @@ Código para a instalação:
 ## Instalando o AngularCli:
 
 `npm install -g @angular/cli@10.1.6`
+
+`npm install @angular/cli@10.1.6`
+
+Tem que instalar ele tanto globalmente quanto dentro do projeto.
 
 ## Abrindo o projeto no servidor local:
 
