@@ -1,27 +1,33 @@
 # Bytebank
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
+DependenCias:
 
-## Development server
+================================================================================================
+Node - Versão 14.20.1
+AngularCli - Versão 10.1.6
+================================================================================================
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Para fazer a instalação e o gerenciamento das versões do node, eu uso o NVM
+Código para a instalação:
 
-## Code scaffolding
+- curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
-## Build
+================================================================================================
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Instalando o node na versão 14.20.1:
+- nvm install 14
 
-## Running unit tests
+================================================================================================
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Instalando o AngularCli:
+npm install -g @angular/cli@10.1.6
 
-## Running end-to-end tests
+================================================================================================
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Abrindo o projeto no servidor local:
+ng serve --open
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+================================================================================================
