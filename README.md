@@ -2,8 +2,8 @@
 
 Dependências:
 
-Node - Versão 14.20.1
-AngularCli - Versão 10.1.6
+Node - Versão 14.20.1;
+AngularCli - Versão 10.1.6;
 
 Para fazer a instalação e o gerenciamento das versões do node, eu uso o NVM
 Código para a instalação:
