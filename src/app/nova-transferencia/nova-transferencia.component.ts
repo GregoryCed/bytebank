@@ -1,6 +1,5 @@
-import { Component, Output } from "@angular/core";
-import { AnyRecord } from "dns";
-import { EventEmitter } from "stream";
+import { Component, EventEmitter, Output } from "@angular/core";
+
 
 @Component({
   selector:'app-nova-transferencia',
@@ -10,14 +9,30 @@ import { EventEmitter } from "stream";
 export class NovaTransferenciaComponent{
 
   @Output() aoTranferir = new EventEmitter <any>();
+  @Output() valoresComErro = new EventEmitter<string>();
 
   valor: number;
   destino: number;
 
   transferir(){
     console.log('Solicitada nova transferência');
-    const valorEmitir = {valor: this.valor, destino: this.destino};
-    this.aoTranferir.emit(valorEmitir);
+    if(this.ehValido()){
+      const valorEmitir = {valor: this.valor, destino: this.destino};
+      this.aoTranferir.emit(valorEmitir);
+    }
+    this.limparCampos();
+  }
 
+  limparCampos(){
+    this.valor = null;
+    this.destino = null;
+  }
+
+  ehValido(){
+    const valido = (this.valor != null) && (this.destino != null);
+    if(!valido){
+      this.valoresComErro.emit('Informe um valor válido');
+    }
+    return valido;
   }
 }
